@@ -22,14 +22,26 @@ export default function Portfolio() {
       className="relative  min-h-screen overflow-hidden bg-black text-white py-10 md:py-20 lg:pt-28"
     >
       <FloatingFAIcons
-        icons={[faCode, faHtml5, faCss3Alt, faJs, faReact, faBootstrap]} // 👈 أضفنا Bootstrap
-        count={10} // أقل عدد زي ما طلبت
+        icons={[faCode, faHtml5, faCss3Alt, faJs, faReact, faBootstrap]}
+        count={10}
         colors={["#60A5FA", "#34D399", "#FBBF24", "#F472B6", "#A78BFA"]}
-        sizeRange={[20, 34]} // أكبر شوية وواضح
-        duration={[12, 20]} // طفو هادي
-        sway={22} // تمايل أفقي
+        sizeRange={[20, 34]}
+        duration={[12, 20]}
+        sway={22}
       />
-
+      {/* Neon grid */}
+      <div
+        className="absolute inset-0 opacity-20 md:opacity-30"
+        style={{
+          backgroundImage: `
+                  radial-gradient(circle at 50% 50%, rgba(59,130,246,0.15), transparent 40%),
+                  linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
+                  linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px)
+                `,
+          backgroundSize: "100% 100%, 60px 60px, 60px 60px",
+          backgroundPosition: "center, center, center",
+        }}
+      />
       {/* Aurora blobs */}
       <div className="hidden md:block pointer-events-none absolute -top-32 -left-32 h-96 w-96 rounded-full blur-3xl opacity-30 aurora" />
       <div className="hidden md:block pointer-events-none absolute -bottom-24 -right-24 h-[28rem] w-[28rem] rounded-full blur-3xl opacity-25 aurora-2" />
