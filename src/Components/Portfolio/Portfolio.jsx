@@ -29,19 +29,7 @@ export default function Portfolio() {
         duration={[12, 20]}
         sway={22}
       />
-      {/* Neon grid */}
-      <div
-        className="absolute inset-0 opacity-20 md:opacity-30"
-        style={{
-          backgroundImage: `
-                  radial-gradient(circle at 50% 50%, rgba(59,130,246,0.15), transparent 40%),
-                  linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
-                  linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px)
-                `,
-          backgroundSize: "100% 100%, 60px 60px, 60px 60px",
-          backgroundPosition: "center, center, center",
-        }}
-      />
+
       {/* Aurora blobs */}
       <div className="hidden md:block pointer-events-none absolute -top-32 -left-32 h-96 w-96 rounded-full blur-3xl opacity-30 aurora" />
       <div className="hidden md:block pointer-events-none absolute -bottom-24 -right-24 h-[28rem] w-[28rem] rounded-full blur-3xl opacity-25 aurora-2" />
@@ -54,7 +42,7 @@ export default function Portfolio() {
         <div className="grid items-center gap-10 md:gap-12 lg:grid-cols-2">
           {/* Left: Text card */}
           <div className="order-2 lg:order-1 animate__animated animate__backInLeft">
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8 backdrop-blur-md shadow-[0_0_30px_rgba(59,130,246,0.10)]">
+            <div className="rounded-3xl border border-white/10 bg-white/10 p-6 md:p-8 backdrop-blur-md shadow-[0_0_30px_rgba(59,130,246,0.10)]">
               <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs md:text-sm tracking-wider border border-white/20">
                 <span className="h-2 w-2 rounded-full bg-primary-400 shadow-[0_0_10px_rgba(96,165,250,0.9)]" />
                 FRONTEND DEVELOPER
