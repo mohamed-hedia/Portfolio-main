@@ -21,14 +21,16 @@ export default function Portfolio() {
       id="home"
       className="relative  min-h-screen overflow-hidden bg-black text-white py-10 md:py-20 lg:pt-28"
     >
-      <FloatingFAIcons
-        icons={[faCode, faHtml5, faCss3Alt, faJs, faReact, faBootstrap]}
-        count={10}
-        colors={["#60A5FA", "#34D399", "#FBBF24", "#F472B6", "#A78BFA"]}
-        sizeRange={[20, 34]}
-        duration={[12, 20]}
-        sway={22}
-      />
+      <div className="absolute inset-0 z-0">
+        <FloatingFAIcons
+          icons={[faCode, faHtml5, faCss3Alt, faJs, faReact, faBootstrap]}
+          count={10}
+          colors={["#60A5FA", "#34D399", "#FBBF24", "#F472B6", "#A78BFA"]}
+          sizeRange={[20, 34]}
+          duration={[12, 20]}
+          sway={22}
+        />
+      </div>
 
       {/* Aurora blobs */}
       <div className="hidden md:block pointer-events-none absolute -top-32 -left-32 h-96 w-96 rounded-full blur-3xl opacity-30 aurora" />

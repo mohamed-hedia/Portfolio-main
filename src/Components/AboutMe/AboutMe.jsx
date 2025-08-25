@@ -16,14 +16,16 @@ export default function AboutMe() {
       id="about"
       className="relative overflow-hidden bg-black text-white py-16 md:py-20 lg:py-28"
     >
-      <FloatingFAIcons
-        icons={[faCode, faHtml5, faCss3Alt, faJs, faReact, faBootstrap]}
-        count={10}
-        colors={["#60A5FA", "#34D399", "#FBBF24", "#F472B6", "#A78BFA"]}
-        sizeRange={[20, 34]}
-        duration={[12, 20]}
-        sway={22}
-      />
+      <div className="absolute inset-0 z-0">
+        <FloatingFAIcons
+          icons={[faCode, faHtml5, faCss3Alt, faJs, faReact, faBootstrap]}
+          count={10}
+          colors={["#60A5FA", "#34D399", "#FBBF24", "#F472B6", "#A78BFA"]}
+          sizeRange={[20, 34]}
+          duration={[12, 20]}
+          sway={22}
+        />
+      </div>
       {/* Neon grid */}
       <div
         className="absolute inset-0 opacity-20 md:opacity-30"
