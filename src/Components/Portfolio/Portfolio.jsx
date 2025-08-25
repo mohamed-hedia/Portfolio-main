@@ -42,7 +42,7 @@ export default function Portfolio() {
         <div className="grid items-center gap-10 md:gap-12 lg:grid-cols-2">
           {/* Left: Text card */}
           <div className="order-2 lg:order-1 animate__animated animate__backInLeft">
-            <div className="max-w-xl rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8 backdrop-blur-md shadow-[0_0_30px_rgba(59,130,246,0.10)]">
+            <div className="rounded-3xl border border-white/10 bg-white/10 p-6 md:p-8 backdrop-blur-md shadow-[0_0_30px_rgba(59,130,246,0.10)]">
               <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs md:text-sm tracking-wider border border-white/20">
                 <span className="h-2 w-2 rounded-full bg-primary-400 shadow-[0_0_10px_rgba(96,165,250,0.9)]" />
                 FRONTEND DEVELOPER
